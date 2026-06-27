@@ -19,7 +19,7 @@ import kotlinx.coroutines.withContext
 class ShippingActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityShippingBinding
-    private val apiKey = "a714828ac6dc0aa57ce5b01e528a84a87774d2310de71652487dc4d4bd4d6bfd"
+    private val apiKey = "RAHASIA"
 
     private var selectedOriginKecamatanId: String? = null
     private var selectedDestKecamatanId: String? = null
