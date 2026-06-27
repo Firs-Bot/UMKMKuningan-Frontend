@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            android:background="@color/colorBackground">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="Cek Ongkos Kirim"
+                app:titleTextColor="@color/textColorPrimary" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="8dp">
+
+            <!-- === SECTION: ALAMAT PENGIRIM === -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/colorSurface"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="📦 Alamat Pengirim"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorPrimary"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Origin: Provinsi -->
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pilih Provinsi" android:textSize="12sp" android:textColor="@color/textColorSecondary" android:layout_marginTop="4dp"/>
+                    <Spinner
+                        android:id="@+id/spOriginProvinsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:paddingHorizontal="12dp"
+                        android:background="@drawable/bg_spinner" />
+
+                    <!-- Origin: Kabupaten -->
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pilih Kabupaten/Kota" android:textSize="12sp" android:textColor="@color/textColorSecondary" android:layout_marginTop="12dp"/>
+                    <Spinner
+                        android:id="@+id/spOriginKabupaten"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:paddingHorizontal="12dp"
+                        android:background="@drawable/bg_spinner" />
+
+                    <!-- Origin: Kecamatan -->
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pilih Kecamatan" android:textSize="12sp" android:textColor="@color/textColorSecondary" android:layout_marginTop="12dp"/>
+                    <Spinner
+                        android:id="@+id/spOriginKecamatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:paddingHorizontal="12dp"
+                        android:background="@drawable/bg_spinner" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- === SECTION: ALAMAT PENERIMA === -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/colorSurface"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🏠 Alamat Penerima"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorPrimary"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Dest: Provinsi -->
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pilih Provinsi" android:textSize="12sp" android:textColor="@color/textColorSecondary" android:layout_marginTop="4dp"/>
+                    <Spinner
+                        android:id="@+id/spDestProvinsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:paddingHorizontal="12dp"
+                        android:background="@drawable/bg_spinner" />
+
+                    <!-- Dest: Kabupaten -->
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pilih Kabupaten/Kota" android:textSize="12sp" android:textColor="@color/textColorSecondary" android:layout_marginTop="12dp"/>
+                    <Spinner
+                        android:id="@+id/spDestKabupaten"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:paddingHorizontal="12dp"
+                        android:background="@drawable/bg_spinner" />
+
+                    <!-- Dest: Kecamatan -->
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pilih Kecamatan" android:textSize="12sp" android:textColor="@color/textColorSecondary" android:layout_marginTop="12dp"/>
+                    <Spinner
+                        android:id="@+id/spDestKecamatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:paddingHorizontal="12dp"
+                        android:background="@drawable/bg_spinner" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- === SECTION: DETAIL PAKET === -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/colorSurface"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="⚖️ Detail Paket"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorPrimary"
+                        android:layout_marginBottom="12dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxCornerRadiusTopStart="12dp"
+                        app:boxCornerRadiusTopEnd="12dp"
+                        app:boxCornerRadiusBottomStart="12dp"
+                        app:boxCornerRadiusBottomEnd="12dp"
+                        android:hint="Berat Paket (Kg)">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etWeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:text="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pilih Kurir" android:textSize="12sp" android:textColor="@color/textColorSecondary" android:layout_marginTop="16dp"/>
+                    <Spinner
+                        android:id="@+id/spCourier"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:paddingHorizontal="12dp"
+                        android:entries="@array/couriers"
+                        android:background="@drawable/bg_spinner" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Tombol Cek Ongkir -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCheck"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:text="Cek Ongkir"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="12dp" />
+
+            <!-- Loading -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:visibility="gone" />
+
+            <!-- Label hasil -->
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/textColorPrimary"
+                android:visibility="gone"
+                android:text="Hasil Cek Ongkir" />
+
+            <!-- Hasil -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvShippingCosts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/item_shipping_cost" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

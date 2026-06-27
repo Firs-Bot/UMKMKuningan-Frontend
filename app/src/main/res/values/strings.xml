@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UMKMKuningan</string>
+
+    <!-- Daftar kota tujuan dengan format label|id BinderByte -->
+    <string-array name="destination_cities">
+        <item>Jakarta Pusat</item>
+        <item>Jakarta Selatan</item>
+        <item>Jakarta Barat</item>
+        <item>Jakarta Timur</item>
+        <item>Jakarta Utara</item>
+        <item>Bandung</item>
+        <item>Bekasi</item>
+        <item>Depok</item>
+        <item>Bogor</item>
+        <item>Cirebon</item>
+        <item>Tasikmalaya</item>
+        <item>Garut</item>
+        <item>Sumedang</item>
+        <item>Majalengka</item>
+        <item>Subang</item>
+        <item>Karawang</item>
+        <item>Surabaya</item>
+        <item>Yogyakarta</item>
+        <item>Semarang</item>
+        <item>Medan</item>
+    </string-array>
+
+    <!-- ID BinderByte untuk tiap kota tujuan (indeks harus sesuai dengan destination_cities) -->
+    <string-array name="destination_city_ids">
+        <item>gambir,jakarta pusat</item>
+        <item>kebayoran baru,jakarta selatan</item>
+        <item>kebon jeruk,jakarta barat</item>
+        <item>duren sawit,jakarta timur</item>
+        <item>penjaringan,jakarta utara</item>
+        <item>coblong,bandung</item>
+        <item>bekasi barat,bekasi</item>
+        <item>beji,depok</item>
+        <item>bogor barat,bogor</item>
+        <item>kejaksan,cirebon</item>
+        <item>cihideung,tasikmalaya</item>
+        <item>garut kota,garut</item>
+        <item>sumedang utara,sumedang</item>
+        <item>majalengka,majalengka</item>
+        <item>subang,subang</item>
+        <item>karawang barat,karawang</item>
+        <item>tambaksari,surabaya</item>
+        <item>umbulharjo,yogyakarta</item>
+        <item>semarang barat,semarang</item>
+        <item>medan baru,medan</item>
+    </string-array>
+
+    <!-- Kode kurir BinderByte -->
+    <string-array name="couriers">
+        <item>jne</item>
+        <item>pos</item>
+        <item>tiki</item>
+        <item>sicepat</item>
+        <item>jnt</item>
+        <item>anteraja</item>
+    </string-array>
+</resources>

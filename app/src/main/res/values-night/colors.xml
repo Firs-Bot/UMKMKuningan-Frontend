@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- UMKMKuningan Palette (Dark Mode) -->
+    <color name="colorPrimary">#D4AF37</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorSecondary">#3CB371</color>
+    <color name="colorBackground">#121212</color>
+    <color name="colorSurface">#1E1E1E</color>
+    
+    <color name="textColorPrimary">#E0E0E0</color>
+    <color name="textColorSecondary">#A0A0A0</color>
+    <color name="colorError">#FF8A8A</color>
+</resources>
